@@ -10,17 +10,17 @@ class FizzbuzzTest : StringSpec({
 
     "start value of 0" {
         val exception = shouldThrow<IllegalStateException> { Fizzbuzz.of(0..10) }
-        exception.message should startWith("Check failed.")
+        exception.message should startWith("Argument start was 0 but expected to be greater than zero")
     }
 
     "start value less than 0" {
         val exception = shouldThrow<IllegalStateException> { Fizzbuzz.of(-1..0) }
-        exception.message should startWith("Check failed.")
+        exception.message should startWith("Argument start was -1 but expected to be greater than zero")
     }
 
     "finish value less than start value" {
         val exception = shouldThrow<IllegalStateException> { Fizzbuzz.of(10 downTo 0) }
-        exception.message should startWith("Check failed.")
+        exception.message should startWith("Argument end was 0 but expected to be greater than or equal to 10")
     }
 
     "Fizzbuzz of 1" {
