@@ -3,8 +3,8 @@ package uk.co.logiccache
 object Fizzbuzz {
 
     fun of(range: IntProgression): List<String> {
-        check(range.first > 0) { "Argument start was ${range.first} but expected to be greater than zero" }
-        check(range.last >= range.first) { "Argument end was ${range.last} but expected to be greater than or equal to ${range.first}" }
+        check(range.first > 0) { "Start of range expected to be greater than zero but was ${range.first}" }
+        check(range.last >= range.first) { "End of range was ${range.last} but expected to be greater than or equal to ${range.first}" }
         return range.map { of(it) }
     }
 
