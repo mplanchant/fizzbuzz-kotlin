@@ -23,64 +23,64 @@ class FizzbuzzTest : StringSpec({
         exception.message should startWith("Check failed.")
     }
 
-    "fizzbuzz of 1" {
+    "Fizzbuzz of 1" {
         Fizzbuzz.of(1..1) shouldBe listOf("1")
     }
 
-    "fizzbuzz of 1 to 3" {
-        Fizzbuzz.of(1..3) shouldBe listOf("1", "2", "fizz")
+    "Fizzbuzz of 1 to 3" {
+        Fizzbuzz.of(1..3) shouldBe listOf("1", "2", "Fizz")
     }
 
-    "fizzbuzz of 1 to 5" {
-        Fizzbuzz.of(1..5) shouldBe listOf("1", "2", "fizz", "4", "buzz")
+    "Fizzbuzz of 1 to 5" {
+        Fizzbuzz.of(1..5) shouldBe listOf("1", "2", "Fizz", "4", "Buzz")
     }
 
-    "fizzbuzz of 1 to 15" {
+    "Fizzbuzz of 1 to 15" {
         Fizzbuzz.of(1..15) shouldBe listOf(
             "1",
             "2",
-            "fizz",
+            "Fizz",
             "4",
-            "buzz",
-            "fizz",
+            "Buzz",
+            "Fizz",
             "7",
             "8",
-            "fizz",
-            "buzz",
+            "Fizz",
+            "Buzz",
             "11",
-            "fizz",
+            "Fizz",
             "13",
             "14",
-            "fizzbuzz"
+            "Fizzbuzz"
         )
     }
 
-    "fizzbuzz of 10 to 15" {
-        Fizzbuzz.of(10..15) shouldBe listOf("buzz", "11", "fizz", "13", "14", "fizzbuzz")
+    "Fizzbuzz of 10 to 15" {
+        Fizzbuzz.of(10..15) shouldBe listOf("Buzz", "11", "Fizz", "13", "14", "Fizzbuzz")
     }
 
-    "fizzbuzz of 1 to 20" {
+    "Fizzbuzz of 1 to 20" {
         Fizzbuzz.of(1..20) shouldBe listOf(
             "1",
             "2",
-            "fizz",
+            "Fizz",
             "4",
-            "buzz",
-            "fizz",
+            "Buzz",
+            "Fizz",
             "7",
             "8",
-            "fizz",
-            "buzz",
+            "Fizz",
+            "Buzz",
             "11",
-            "fizz",
+            "Fizz",
             "13",
             "14",
-            "fizzbuzz",
+            "Fizzbuzz",
             "16",
             "17",
-            "fizz",
+            "Fizz",
             "19",
-            "buzz"
+            "Buzz"
         )
     }
 })
