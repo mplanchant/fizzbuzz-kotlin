@@ -1,5 +1,7 @@
 # Fizzbuzz
 
+[![Build Status](https://travis-ci.com/mplanchant/fizzbuzz-kotlin.svg?branch=master)](https://travis-ci.com/mplanchant/fizzbuzz-kotlin)
+
 ## Step 1
 Write code that prints out the following for a contiguous range of numbers:
 * the number
